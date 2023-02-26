@@ -11,11 +11,7 @@
           "type": "number"
         },
         {
-          "name": "Drive Coach",
-          "type": "text"
-        },
-        {
-          "name": "Driver Names",
+          "name": "Team Name",
           "type": "text"
         }
       ]
@@ -36,7 +32,7 @@
           "type": "number"
         },
         {
-          "name": "Wheel-Bumper Distance",
+          "name": "Wheel to bumper distance",
           "type": "number"
         },
         {
@@ -58,6 +54,7 @@
           "name": "Swerve Motor Type",
           "type": "dropdown",
           "options": [
+            "No swerve",
             "Neo",
             "Falcon",
             "Cim"
@@ -122,16 +119,16 @@
           ]
         },
         {
-          "name": "Scoring Methods",
+          "name": "Ways Robot Scores",
           "type": "multicheckbox",
           "options": [
-            "Manual",
-            "Auto"
+            "Manual Scoring",
+            "Auto Scoring"
           ]
         },
         {
-          "name": "Preferred Pickup Location",
-          "type": "dropdown",
+          "name": "Pickup Locations",
+          "type": "multicheckbox",
           "options": [
             "Ground",
             "Sub 1",
@@ -139,6 +136,7 @@
             "Sub 2 High"
           ]
         },
+
         {
           "name": "Comments",
           "type": "textarea",

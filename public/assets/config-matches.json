@@ -3,72 +3,47 @@
   "logo": "logo.png",
   "pages": [
     {
-      "name": "Setup",
+      "name": "Setup+Autonomous",
       "widgets": [
         {
           "name": "Scouter Name",
           "type": "text",
-          "validation": {
-            "comparison": "greater",
-            "value": 0
-          }
+          "colspan": 2
         },
         {
           "name": "Starting Position",
           "type": "positions",
-          "file": "field.png"
-        }
-      ]
-    },
-    {
-      "name": "Autonomous",
-      "widgets": [
+          "file": "field.png",
+          "height": 200,
+          "colspan": 2,
+          "allowMultiple": true
+        },
         {
           "name": "Left Community",
           "type": "checkbox"
         },
         {
-          "name": "Co-Op Nodes",
-          "type": "label",
-          "align": "center",
-          "col": 2
-        },
-        {
-          "name": "Scored Game Pieces",
-          "type": "togglegrid",
-          "prefix": "Auto",
-          "width": 9,
-          "height": 2,
-          "colors": [
-            "red",
-            "green"
-          ]
-        },
-        {
-          "name": "Hybrid Nodes",
-          "type": "togglegrid",
-          "prefix": "Auto",
-          "width": 9,
-          "height": 1,
-          "colors": [
-            "black",
-            "yellow",
-            "purple"
-          ]
+          "name": "Grid",
+          "type": "positions",
+          "file": "grid.png",
+          "colspan": 2,
+          "allowMultiple": true,
+          "selectColor": "black",
+          "prefix": "Auto"
         },
         {
           "type": "spacer",
-          "height": 20
+          "height": 40
         },
         {
-          "name": "Charging Station",
-          "type": "dropdown",
-          "options": [
-            "Not Attempted",
-            "Engaged",
-            "Docked",
-            "Failed"
-          ]
+          "name": "Docked To Charging Station",
+          "type": "checkbox",
+          "labelColspan": 2
+        },
+        {
+          "name": "Charging Station Engaged",
+          "type": "checkbox",
+          "labelColspan": 2
         }
       ]
     },
@@ -78,8 +53,7 @@
         {
           "name": "Picked Up From",
           "type": "heading",
-          "col": 2,
-          "colspan": 2,
+          "colspan": 5,
           "align": "center"
         },
         {
@@ -91,62 +65,32 @@
           "type": "spinbox"
         },
         {
+          "type": "spacer",
+          "width": 20,
+          "col": 3
+        },
+        {
           "name": "Sub 2 Low",
           "type": "spinbox",
           "row": 2,
-          "col": 3
+          "col": 4
         },
         {
           "name": "Sub 2 High",
           "type": "spinbox",
-          "col": 3
+          "col": 4
         },
         {
           "type": "spacer",
           "height": 40
         },
         {
-          "name": "Co-Op Nodes",
-          "type": "label",
-          "align": "center",
-          "col": 2,
-          "colspan": 3
-        },
-        {
-          "name": "Scored Game Pieces",
-          "type": "togglegrid",
-          "colspan": 3,
-          "width": 9,
-          "height": 2,
-          "colors": [
-            "red",
-            "green"
-          ]
-        },
-        {
-          "name": "Hybrid Nodes",
-          "type": "togglegrid",
-          "colspan": 3,
-          "width": 9,
-          "height": 1,
-          "colors": [
-            "black",
-            "yellow",
-            "purple"
-          ]
-        },
-        {
-          "name": "Defense Rating",
-          "type": "dropdown",
-          "colspan": 2,
-          "options": [
-            "0 (Not Played)",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5 (Very Effective)"
-          ]
+          "name": "Grid",
+          "type": "positions",
+          "file": "grid.png",
+          "colspan": 5,
+          "allowMultiple": true,
+          "selectColor": "black"
         }
       ]
     },
@@ -165,7 +109,7 @@
           "default": 3
         },
         {
-          "name": "Failed Charging Station",
+          "name": "Tipped Charging Station",
           "type": "checkbox"
         },
         {

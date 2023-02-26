@@ -1,0 +1,165 @@
+{
+  "heading": "Charged Up - 2023",
+  "logo": "logo.png",
+  "pages": [
+    {
+      "name": "Setup+Autonomous",
+      "widgets": [
+        {
+          "name": "Scouter Name",
+          "type": "dropdown",
+          "options":[
+            "Paul",
+            "Brandon",
+            "Theren",
+            "Other"
+          ],
+          "colspan": 2
+        },
+        {
+          "name": "Starting Position",
+          "type": "positions",
+          "file": "field.png",
+          "height": 200,
+          "colspan": 2,
+          "allowMultiple": false
+        },
+        {
+          "name": "Left Community",
+          "type": "checkbox"
+        },
+        {
+          "name": "Score High",
+          "type": "spinbox",
+          "prefix":"Auto"
+        },
+        {
+          "name": "Score Mid",
+          "type": "spinbox",
+          "prefix":"Auto"
+        },
+        {
+          "name": "Score Low",
+          "type":"spinbox",
+          "prefix":"Auto"
+        },
+        {
+          "type": "spacer",
+          "height": 40
+        },
+        {
+          "name": "Charging Station",
+          "type": "dropdown",
+          "options":[
+            "Not Attemped",
+            "Docked Only",
+            "Engaged(Points)",
+            "Failed"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Teleop",
+      "widgets": [
+        {
+          "name": "Picked Up From",
+          "type": "heading",
+          "colspan": 5,
+          "align": "center"
+        },
+        {
+          "name": "Ground",
+          "type": "spinbox"
+        },
+        {
+          "name": "Substation",
+          "type": "spinbox",
+          "row": 2,
+          "col": 4
+        },
+        {
+          "name": "Scoring",
+          "type": "heading",
+          "colspan": 5,
+          "align": "center"
+        },
+        {
+          "name": "Score High",
+          "type": "spinbox"
+        },
+        {
+          "name": "Score Mid",
+          "type": "spinbox"
+        },
+        {
+          "name": "Score Low",
+          "type": "spinbox",
+          "prefix": "Tele"
+        },
+        {
+          "name": "Defense",
+          "type": "heading",
+          "colspan": 5,
+          "align": "center"
+        },
+        {
+          "name": "Defense Rating",
+          "type": "dropdown",
+          "options":[
+            "0(Not Played)",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5(Very Effective)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Endgame",
+      "widgets": [
+        {
+          "name": "Charging Station",
+          "type": "heading",
+          "colspan": 5,
+          "align": "center"
+        },
+        {
+          "name": "Parking",
+          "type": "dropdown",
+          "options": [
+            "None",
+            "Parked",
+            "Docked Only",
+            "Docked+Engaged"
+          ]
+        },
+        {
+          "name": "Failed Charging Station",
+          "type": "checkbox"
+        },
+        {
+          "name": "Robots Docked",
+          "type": "spinbox",
+          "max": 3
+        },
+        {
+          "name": "Notes",
+          "type": "heading",
+          "colspan": 5,
+          "align": "center"
+        },
+        {
+          "name": "Mechanical Failures",
+          "type": "text"
+        },
+        {
+          "name": "Comments",
+          "type": "textarea"
+        }
+      ]
+    }
+  ]
+}
